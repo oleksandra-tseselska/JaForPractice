@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onDragDetected="#onBtnClick" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jaformpractice.HumanAlienApp.HumanAlienController">
+   <children>
+      <RadioButton layoutX="75.0" layoutY="93.0" mnemonicParsing="false" onAction="#onBtnClick" text="Human">
+         <toggleGroup>
+            <ToggleGroup fx:id="BeingType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="75.0" layoutY="141.0" mnemonicParsing="false" onAction="#onBtnClick" text="Alien" toggleGroup="$BeingType" />
+      <TextArea fx:id="textArea" layoutX="331.0" layoutY="10.0" prefHeight="373.0" prefWidth="256.0" />
+      <Button layoutX="115.0" layoutY="249.0" mnemonicParsing="false" onAction="#onFeedBtnClick" text="Feed" />
+   </children>
+</AnchorPane>

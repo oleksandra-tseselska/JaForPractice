@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jaformpractice.BlackKnightController">
+   <children>
+      <Text fx:id="knightNameInfo" layoutX="198.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="193.0" />
+      <Text fx:id="knightProps" layoutX="194.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="213.0" />
+      <Button layoutX="278.0" layoutY="330.0" mnemonicParsing="false" onAction="#strikeKnight" text="Strike" />
+      <Button layoutX="41.0" layoutY="69.0" mnemonicParsing="false" onAction="#startGame" text="Start Game" />
+      <Button layoutX="496.0" layoutY="69.0" mnemonicParsing="false" onAction="#endGame" text="End Game" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+package com.example.jaformpractice;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+public class BlackKnightApplication extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(BlackKnightApplication.class.getResource("black-knight.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+
+        stage.setTitle("Welcome to The SashaGameINC");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) { launch(); }
+}
+
